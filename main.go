@@ -23,6 +23,7 @@ func main() {
 			fmt.Println(err)
 			return err
 		}
+		fmt.Print("OK")
 		return nil
 	}, backoff.NewExponentialBackOff())
 }
